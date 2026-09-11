@@ -1,0 +1,158 @@
+header nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 15px;
+            cursor: pointer;
+            
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 10px;
+        }
+
+        header nav ul li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .first {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            height: 50vh;
+        }
+
+        .first div:first-child {
+            font-size: 33px;
+        }
+
+        .first div:nth-child(2) {
+            font-size: 17px;
+            max-width: 46vw;
+            text-align: center;
+        }
+
+        .first div:nth-child(3) button {
+            padding: 8px;
+            background-color: rgb(11, 229, 229);
+            color: white;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        .first div:nth-child(3) button:hover{
+            background-color: rgb(21, 204, 204);
+            cursor: pointer;
+            transform: translateY(3px);
+        }
+
+        .second {
+             max-width: 49vw;
+             margin: auto;
+        }
+
+        .download div:first-child {
+            display: flex;
+             align-items: center;
+            gap: 5px;
+        }
+
+        .item {
+            background-color: rgb(175, 167, 167);
+            text-align: center;
+            padding: 27px 5px;
+             border-radius: 9px;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             transition: all 0.2s ease-in;
+             
+        }
+        .item:hover{
+            background-color: rgb(130, 137, 144);
+            cursor: pointer;
+            box-shadow: 1px 3px 5px black;
+            transform: scale(1.1);
+             
+
+        }
+        .item-lang{
+            font-size: 22px;
+            margin-bottom: 22px;
+            color:white;
+            font-weight: 600;
+            
+        }
+        .item button{
+            padding: 6px;
+            border-radius: 9px;
+            color: white;
+            transition: all 0.2s ease-in;
+        }
+        .item button:hover{
+             cursor: pointer;
+             box-shadow: 1px 3px 5px black;
+             transform: translateY(2px)
+        }
+        .item .grn{
+            background-color: green;
+        }
+        .item .grn:hover{
+            background-color: rgb(12, 91, 12);
+        }
+        .item .blue{
+            background-color: blue;
+        }
+        .item .blue:hover{
+            background-color: rgb(19, 19, 151);
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:15px;
+            margin-top: 15px;
+        }
+
+        @media only screen and (max-width:1000px){
+            header nav{
+                display: flex;
+                flex-direction: column;
+            }
+            .first {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            .second .download div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+        @media only screen and (max-width:500px){
+            .first{
+                padding: 55px;
+            }
+        }
+        footer {
+            position: sticky;
+            float: right;
+            right: 10vw;
+            bottom: 10vh;
+        }
